@@ -9,7 +9,9 @@ header {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-
+    box-shadow: 0px 8px 40px darkgoldenrod;
+    z-index: 1111;
+    position: relative;
 }
 
 header div {
@@ -46,12 +48,13 @@ header .nav a:hover {
 .general-info {
     width: 100%;
     display: flex;
-    background-color: #6b7f80;
-    color: white;
     flex-direction: column;
     align-items: center;
+    background-color: #6b7f80;
+    color: white;
     padding: 20px;
 }
+
 
 .general-info h1 .serv {
     color: gold;
@@ -72,9 +75,38 @@ header .nav a:hover {
     padding: 20px;
 }
 
+
 .content .elem img {
     width: 150px;
     height: 150px;
+
+}
+
+.content .elem img:hover {
+    transform: scale(1.3) rotate(10deg);
+    -webkit-transform: scale(1.3) rotate(10deg);
+    -moz-transform: scale(1.3) rotate(10deg);
+    -ms-transform: scale(1.3) rotate(10deg);
+    -o-transform: scale(1.3) rotate(10deg);
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+
+}
+
+.content .elem:nth-child(2) img:hover {
+    transform: scale(2) rotate(10deg);
+    -webkit-transform: scale(2) rotate(10deg);
+    -moz-transform: scale(2) rotate(10deg);
+    -ms-transform: scale(2) rotate(10deg);
+    -o-transform: scale(2) rotate(10deg);
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
 }
 
 .elem {
@@ -105,6 +137,7 @@ header .nav a:hover {
 .elem span {
     color: crimson;
     font-weight: bold;
+    text-align: center;
 
 }
 
@@ -112,6 +145,41 @@ header .nav a:hover {
     display: flex;
     background-image: url("/imgs/back\ repeat.PNG");
     background-size: cover;
+}
+
+@media (max-width:1200px) {
+    .about {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .about .about-text {
+        align-self: stretch;
+        flex-grow: 1;
+
+    }
+
+    .about .about-text,
+    .about .about-text h1 {
+        align-self: center;
+    }
+
+    .about .about-text .about-us {
+        text-align: center;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width:800px) {
+
+    .parent-calc .all-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
 
 .about div,
@@ -144,19 +212,33 @@ header .nav a:hover {
     margin: auto;
     padding: 20px;
     background-color: #342D44;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
-.parent-calc .card {
+.parent-calc>h1 {
+    color: gold;
+}
+
+.parent-calc .all-cards .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 20%;
     height: 115px;
     text-align: center;
     padding: 10px;
     margin: 30px 10px;
     color: white;
+    flex-grow: 1;
+
+}
+
+.parent-calc .all-cards {
+    display: flex;
+    width: 80%;
 
 }
 
@@ -325,6 +407,189 @@ header .nav a:hover {
     bottom: 10px;
 }
 
+.parent-our-skills1 {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    align-items: center;
+    background-color: #6b7f80;
+    width: 100%;
+    margin: auto;
+}
+
+.parent-our-skills1 h1 {
+    padding: 10px 20px 20px 20px;
+    color: gold;
+}
+
+.parent-our-skills1 .skills1 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.parent-our-skills1 .skills1 .lang {
+    display: flex;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.parent-our-skills1 .skills1 .lang .lang-type {
+    width: 10%;
+    text-align: right;
+}
+
+.parent-our-skills1 .skills1 .lang .precentage {
+    width: 75%;
+    display: flex;
+}
+
+.parent-our-skills1 .skills1 .lang .precentage>div {
+    transition: width 5s 5s;
+    -webkit-transition: width 5s 5s;
+    -moz-transition: width 5s 5s;
+    -ms-transition: width 5s 5s;
+    -o-transition: width 5s 5s;
+}
+
+
+.parent-our-skills1 .skills1 .lang .precentage div:nth-child(1) {
+    background-color: #03A9F4;
+    margin-left: 10px;
+    padding: 10px 5px;
+    text-align: right;
+}
+
+.parent-our-skills1 .skills1 .lang .precentage div:nth-child(2) {
+    padding: 10px;
+    background-color: white;
+}
+
+@keyframes width-html1 {
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes width-html2 {
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes width-css1 {
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes width-css2 {
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes width-js1 {
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes width-js2 {
+    100% {
+        width: 20%;
+    }
+}
+
+@keyframes width-php1 {
+    100% {
+        width: 65%;
+    }
+}
+
+@keyframes width-php2 {
+    100% {
+        width: 35%;
+    }
+}
+
+@keyframes width-py1 {
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes width-py2 {
+    100% {
+        width: 10%;
+    }
+}
+
+
+.parent-our-skills1 .skills1 .html1 .precentage div:nth-child(1) {
+    width: 0%;
+    animation: width-html1 2s linear 1 forwards;
+    -webkit-animation: width-html1 2s linear 1 forwards;
+}
+
+.parent-our-skills1 .skills1 .html1 .precentage div:nth-child(2) {
+    width: 100%;
+    animation: width-html2 2s linear 1 forwards;
+    -webkit-animation: width-html2 2s linear 1 forwards;
+}
+
+.parent-our-skills1 .skills1 .css1 .precentage div:nth-child(1) {
+    width: 0%;
+    animation: width-css1 2s linear 1 forwards;
+    -webkit-animation: width-css1 2s linear 1 forwards;
+}
+
+.parent-our-skills1 .skills1 .css1 .precentage div:nth-child(2) {
+    width: 100%;
+    animation: width-css2 linear 2s 1 forwards;
+    -webkit-animation: width-css2 linear 2s 1 forwards;
+}
+
+.parent-our-skills1 .skills1 .js1 .precentage div:nth-child(1) {
+    width: 0%;
+    animation: width-js1 2s linear 1 forwards;
+    -webkit-animation: width-js1 2s linear 1 forwards;
+}
+
+.parent-our-skills1 .skills1 .js1 .precentage div:nth-child(2) {
+    width: 100%;
+    animation: width-js2 2s linear 1 forwards;
+    -webkit-animation: width-js2 2s linear 1 forwards;
+}
+
+.parent-our-skills1 .skills1 .php1 .precentage div:nth-child(1) {
+    width: 0%;
+    animation: width-php1 2s linear 1 forwards;
+    -webkit-animation: width-php1 2s linear 1 forwards;
+}
+
+.parent-our-skills1 .skills1 .php1 .precentage div:nth-child(2) {
+    width: 100%;
+    animation: width-php2 2s linear 1 forwards;
+    -webkit-animation: width-php2 2s linear 1 forwards;
+}
+
+.parent-our-skills1 .skills1 .python1 .precentage div:nth-child(1) {
+    width: 0%;
+    animation: width-py1 2s linear 1 forwards;
+    -webkit-animation: width-py1 2s linear 1 forwards;
+}
+
+.parent-our-skills1 .skills1 .python1 .precentage div:nth-child(2) {
+    width: 100%;
+    animation: width-py2 2s linear 1 forwards;
+    -webkit-animation: width-py2 2s linear 1 forwards;
+}
+
 footer {
     background-color: #342D44;
     display: flex;
@@ -341,4 +606,9 @@ footer div {
 
 footer div span {
     color: crimson;
+}
+
+p.clear {
+    clear: both;
+    display: none;
 }
