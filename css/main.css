@@ -2,3 +2,343 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+header {
+    background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+
+header div {
+    width: 40%;
+    color: white;
+
+}
+
+header .logo {
+    font-family: 'Chango',
+        cursive;
+    font-size: 25px;
+}
+
+header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .nav a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+header .nav a:hover {
+    background-color: gold;
+}
+
+.general-info {
+    width: 100%;
+    display: flex;
+    background-color: #6b7f80;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.general-info h1 .serv {
+    color: gold;
+}
+
+.general-info p {
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    background-color: #342D44;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.content .elem img {
+    width: 150px;
+    height: 150px;
+}
+
+.elem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.elem figcaption {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    color: gold;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.elem img[alt="2nd team"] {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.elem span {
+    color: crimson;
+    font-weight: bold;
+
+}
+
+.about {
+    display: flex;
+    background-image: url("/imgs/back\ repeat.PNG");
+    background-size: cover;
+}
+
+.about div,
+.about h1 {
+    padding: 10px;
+}
+
+.about div h1 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.about .about-text .about-us {
+    line-height: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about .about-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.parent-calc {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background-color: #342D44;
+    justify-content: center;
+}
+
+.parent-calc .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    height: 115px;
+    text-align: center;
+    padding: 10px;
+    margin: 30px 10px;
+    color: white;
+
+}
+
+.parent-calc .services {
+    background-color: crimson;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.parent-calc .degrees {
+    background-color: #227093;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.parent-calc .clients {
+    background-color: #218C74;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.parent-calc span {
+    font-size: 20px;
+}
+
+.parent-our-skills {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    background-color: #6b7f80;
+}
+
+.parent-our-skills h1 {
+    padding: 10px 20px 20px 20px;
+    color: gold;
+}
+
+.parent-our-skills .skills {
+    width: 70%;
+}
+
+
+.parent-our-skills .skills div div {
+    height: 3px;
+}
+
+.parent-our-skills .skills div {
+    margin: 10px;
+    width: 100%;
+}
+
+.parent-our-skills .skills .html {
+    padding: 10px;
+    color: white;
+    position: relative;
+    background-image: linear-gradient(to right, #03A9F4 60%, white 60%, white 100%);
+}
+
+.parent-our-skills .skills .html::before {
+    content: "HTML";
+    position: absolute;
+    left: -60px;
+    font-weight: bold;
+}
+
+.parent-our-skills .skills .html::after {
+    content: "60%";
+    position: absolute;
+    left: 54%;
+    bottom: 10px;
+
+}
+
+.parent-our-skills .skills .css {
+    padding: 10px;
+    color: white;
+    position: relative;
+    background-image: linear-gradient(to right, #03A9F4 70%, white 70%, white 100%);
+}
+
+.parent-our-skills .skills .css::before {
+    content: "CSS";
+    position: absolute;
+    left: -50px;
+    font-weight: bold;
+}
+
+.parent-our-skills .skills .css::after {
+    content: "70%";
+    position: absolute;
+    left: 64%;
+    bottom: 10px;
+
+}
+
+.parent-our-skills .skills .js {
+    padding: 10px;
+    color: white;
+    position: relative;
+    background-image: linear-gradient(to right, #03A9F4 80%, white 80%, white 100%);
+}
+
+.parent-our-skills .skills .js::before {
+    content: "JavaScript";
+    position: absolute;
+    left: -90px;
+    font-weight: bold;
+}
+
+.parent-our-skills .skills .js::after {
+    content: "80%";
+    position: absolute;
+    left: 74%;
+    bottom: 10px;
+}
+
+.parent-our-skills .skills .php {
+    padding: 10px;
+    color: white;
+    position: relative;
+    background-image: linear-gradient(to right, #03A9F4 65%, white 65%, white 100%);
+}
+
+.parent-our-skills .skills .php::before {
+    content: "PHP";
+    position: absolute;
+    left: -50px;
+    font-weight: bold;
+}
+
+.parent-our-skills .skills .php::after {
+    content: "65%";
+    position: absolute;
+    left: 59%;
+    bottom: 10px;
+}
+
+.parent-our-skills .skills .python {
+    padding: 10px;
+    color: white;
+    position: relative;
+    background-image: linear-gradient(to right, #03A9F4 90%, white 90%, white 100%);
+}
+
+.parent-our-skills .skills .python::before {
+    content: "Python";
+    position: absolute;
+    left: -70px;
+    font-weight: bold;
+}
+
+.parent-our-skills .skills .python::after {
+    content: "90%";
+    position: absolute;
+    left: 84%;
+    bottom: 10px;
+}
+
+footer {
+    background-color: #342D44;
+    display: flex;
+    padding: 20px;
+    font-weight: bold;
+    color: gold;
+    justify-content: space-between;
+}
+
+footer div {
+    width: 30%;
+    text-align: center;
+}
+
+footer div span {
+    color: crimson;
+}
